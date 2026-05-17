@@ -1,7 +1,7 @@
 ```markdown
 # 🤝 Contribuire a OS_Sentinel
 
-Ti ringraziamo per l'interesse nel voler proteggere e mappare il territorio di Campobasso. Prima di proporre modifiche o dati, leggi attentamente queste linee guida.
+Ti ringraziamo per l'interesse nel voler proteggere e mappare il territorio. Prima di proporre modifiche o dati, leggi attentamente queste linee guida.
 
 ## 🛑 REGOLA D'ORO: NESSUN DATO PERSONALE
 Questo progetto è rigorosamente anonimo. Qualsiasi contributo che includa una o più delle seguenti informazioni verrà **immediatamente rifiutato e cancellato**:
