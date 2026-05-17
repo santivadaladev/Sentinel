@@ -13,4 +13,3 @@ Questo progetto è rigorosamente anonimo. Qualsiasi contributo che includa una o
 ## 📝 Come Funziona la Raccolta Dati (Fase 1)
 Allo stato attuale, la raccolta dati è centralizzata e gestita direttamente dal maintainer tramite l'inserimento manuale dei casi verificati di cronaca e report ufficiali all'interno del file Excel master. Le segnalazioni pubbliche automatizzate verranno integrate in un secondo momento.
 
-3. File LICENSE
