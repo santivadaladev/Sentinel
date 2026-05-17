@@ -26,6 +26,7 @@
             box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
             height: 60px;
             box-sizing: border-box;
+            z-index: 1000;
         }
         h1 {
             margin: 0;
@@ -38,12 +39,18 @@
             color: #8ab4f8;
             font-size: 11px;
         }
-        /* FORZATURA ALTEZZA MAPPA: 100% dello spazio rimanente */
+        
         #map {
             width: 100%;
             height: calc(100vh - 60px); 
-            background-color: #0d1527;
+            background-color: #0a0f1d;
         }
+
+        /* TRUCCO CSS: Trasforma la mappa standard di OpenStreetMap in Dark Mode Cyberpunk */
+        .leaflet-tile-container {
+            filter: invert(100%) hue-rotate(180deg) saturate(60%) brightness(90%) contrast(90%);
+        }
+
         /* Personalizzazione Popup Mappa */
         .leaflet-popup-content-wrapper {
             background: #0d1527 !important;
@@ -51,6 +58,7 @@
             border: 1px solid #ff3366 !important;
             border-radius: 4px;
             font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 0 10px rgba(255, 51, 102, 0.3);
         }
         .leaflet-popup-tip {
             background: #0d1527 !important;
@@ -81,20 +89,20 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 1. Inizializza la mappa centrata esattamente su Campobasso
+        // 1. Inizializza la mappa centrata su Campobasso
         const map = L.map('map', {
             center: [41.5610, 14.6628],
             zoom: 14,
             zoomControl: true
         });
 
-        // 2. Carica il tema scuro stabile (Usa le nuove URL di CARTO senza restrizioni)
-        L.tileLayer('https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        // 2. Carica i server ufficiali mondiali di OpenStreetMap (Zero blocchi di sicurezza)
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
             maxZoom: 19
         }).addTo(map);
 
-        // 3. I tuoi dati storici reali di Campobasso
+        // 3. Array dei dati storici estratti dal tuo database di Campobasso
         const incidenti = [
             {
                 id: "MOL-CYBER-001",
@@ -125,4 +133,32 @@
                 coords: [41.5595, 14.6650]
             },
             {
-                id: "MOL-CY
+                id: "MOL-CYBER-005",
+                target: "Comune di Campobasso",
+                periodo: "Dicembre 2022",
+                info: "Incursione cyber alle infrastrutture di Palazzo San Giorgio. Blocco dei sistemi elettronici di pagamento PagoPA. Intervento della Polizia Postale.",
+                coords: [41.5611, 14.6631]
+            }
+        ];
+
+        // 4. Ciclo per posizionare i cerchi radar rossi
+        incidenti.forEach(incidente => {
+            const marker = L.circleMarker(incidente.coords, {
+                color: '#ff3366',
+                fillColor: '#ff3366',
+                fillOpacity: 0.6,
+                radius: 9,
+                weight: 2
+            }).addTo(map);
+
+            const popupContent = `
+                <div class="popup-title">[${incidente.id}] ANOMALIA ICT</div>
+                <div class="popup-meta"><b>Target:</b> ${incidente.target}<br><b>Periodo:</b> ${incidente.periodo}</div>
+                <div style="font-size:12px; line-height:1.4; font-family: monospace;">${incidente.info}</div>
+            `;
+
+            marker.bindPopup(popupContent);
+        });
+    </script>
+</body>
+</html>
