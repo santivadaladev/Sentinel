@@ -15,8 +15,7 @@ Il progetto si basa sulla filosofia della **Threat Intelligence Civica**: trasfo
 | Risorsa | Descrizione | Stato Server |
 | :--- | :--- | :--- |
 | 🗺️ [**Mappa Interattiva (Radar)**](https://teknoirdev.github.io/Sentinel/) | Visualizzazione geo-spaziale in tempo reale degli incidenti | **🟢 ONLINE** |
-| 📊 [**Database Master (Excel)**](os_sentinel_db_molise.xlsx) | Archivio strutturato, normalizzato e storicizzato dei dati | **📦 PRONTO AL DOWNLOAD** |
-
+| 📊 [**Database Master (Google Sheets)**](https://docs.google.com/spreadsheets/d/1XrKSKSg-f9NuHifyutJveiXf6j9MqOPF_svnl_1qMUA/edit?usp=sharing) | Archivio cloud strutturato, normalizzato e storicizzato | **👁️ CONSULTABILE** 
 ---
 
 ## 🛑 Pilastri Fondamentali & Privacy (GDPR)
