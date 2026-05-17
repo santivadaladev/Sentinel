@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="sentinellogo.png" alt="Sentinel Logo" width="280"/>
+  <img src="sentinellogo.png" alt="Sentinel Logo" width="320"/>
 </p>
 
 # 🛡️ OS_Sentinel: Open-Source Civic Intelligence & Territorial Awareness
@@ -14,8 +14,9 @@ Il progetto si basa sulla filosofia della **Threat Intelligence Civica**: trasfo
 
 | Risorsa | Descrizione | Stato Server |
 | :--- | :--- | :--- |
-| 🗺️ [**Mappa Interattiva (Radar)**](https://teknoirdev.github.io/Sentinel/) | Visualizzazione geo-spaziale in tempo reale degli incidenti | **🟢 ONLINE** |
-| 📊 [**Database Master (Google Sheets)**](https://docs.google.com/spreadsheets/d/1XrKSKSg-f9NuHifyutJveiXf6j9MqOPF_svnl_1qMUA/edit?usp=sharing) | Archivio cloud strutturato, normalizzato e storicizzato | **👁️ CONSULTABILE** 
+| 🗺️ [**Mappa Interattiva (Radar)**](https://teknoirdev.github.io/Sentinel/) | Visualizzazione geo-spaziale degli incidenti informatici e urbani | **🟢 ONLINE** |
+| 📊 [**Database Master (Google Sheets)**](https://docs.google.com/spreadsheets/d/1XrKSKSg-f9NuHifyutJveiXf6j9MqOPF_svnl_1qMUA/edit?usp=sharing) | Archivio cloud strutturato, normalizzato e storicizzato | **👁️ CONSULTABILE** |
+
 ---
 
 ## 🛑 Pilastri Fondamentali & Privacy (GDPR)
@@ -32,10 +33,8 @@ Per evitare che il progetto si trasformi in "schedatura" o sorveglianza di massa
 
 ```text
 Sentinel/
-├── .github/                  # Configurazione dei server e automazioni GitHub Pages
-├── sentinellogo.png          # Logo ufficiale del progetto (Cyber-Octopus)
+├── sentinellogo.png          # Logo ufficiale del progetto (Cyber-Radar Octopus)
 ├── README.md                 # Questo file (Presentazione, Note Tecniche e Indice)
 ├── index.html                # Interfaccia web e codice sorgente della mappa interattiva (Leaflet)
 ├── contributing.md           # Linee guida e policy per l'inserimento dei dati dei collaboratori
-├── LICENSE                   # Licenza MIT (Codice totalmente libero e protetto)
-└── os_sentinel_db_molise.xlsx # Il Database Master ufficiale (Fogli Excel strutturati)
+└── LICENSE                   # Licenza MIT (Codice totalmente libero e protetto)
