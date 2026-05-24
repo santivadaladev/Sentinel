@@ -4,9 +4,6 @@
 
 # 🛡️ OS_Sentinel: Open-Source Civic Intelligence & Territorial Awareness
 
-OS_Sentinel è un progetto open-source, no-profit e guidato dalla community, nato per raccogliere, strutturare e storicizzare in modo totalmente anonimo le criticità informatiche (incidenti ICT) e territoriali (sicurezza urbana) della città di **Campobasso** e della regione Molise.
-
-Il progetto si basa sulla filosofia della **Threat Intelligence Civica**: trasformare eventi di cronaca, report istituzionali e dati pubblici in un dataset aperto, normalizzato e riutilizzabile da giornalisti, università e cittadini per migliorare la consapevolezza del territorio.
 
 ---
 
